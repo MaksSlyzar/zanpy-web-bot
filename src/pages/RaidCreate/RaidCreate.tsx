@@ -4,8 +4,8 @@ import "./RaidCreate.css";
 import CommandBox from "./CommandBox";
 import { v4 as uuidv4 } from "uuid";
 
-//const serverUrl = "https://zanpy-discord-bot.onrender.com";
-const serverUrl = "http://localhost:10000";
+const serverUrl = "https://zanpy-discord-bot.onrender.com";
+//const serverUrl = "http://localhost:10000";
 
 interface Weapon {
   imageUrl: string;
