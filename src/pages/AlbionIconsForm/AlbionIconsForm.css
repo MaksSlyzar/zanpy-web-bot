@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.albion-form {
+  padding: 24px;
+  width: 90%;
+  max-width: 700px; /* було 600px */
+  margin: 40px auto;
+  background-color: #111;
+  border: 1px solid #222;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.albion-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #b96efb;
+  font-weight: normal;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icon-text { 
+  text-align: left;
+}
+
+.input-group input[type="text"],
+.input-group textarea,
+.input-group input[type="file"] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #333;
+  background-color: #0f0f0f;
+  color: white;
+  outline: none;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.input-group input[type="text"]:focus,
+.input-group textarea:focus,
+.input-group input[type="file"]:focus {
+  border-color: #a855f7;
+}
+
+.add-btn {
+  padding: 12px;
+  background-color: #a855f7;
+  color: white;
+  font-weight: normal;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #9333ea;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #151515;
+  padding: 12px;
+  border: 1px solid #222;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.icon-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji-image {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.emoji-preview {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  margin-top: 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  padding: 6px 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+@media (max-width: 600px) {
+  .icon-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+  }
+}
+
